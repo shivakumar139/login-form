@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    /* background-color: #00FFF6; */
+    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.container{
+    background-color: white;
+    opacity: 0.7;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.form-header p{
+    margin-top: 10px;
+    color: rgb(124, 116, 116);
+}
+
+.form-body{
+    margin-top: 10px;
+}
+.form-body div{
+    margin-top: 10px;
+    width: 100%;
+}
+.form-body div p{
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+.form-body input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.form-body input[type="submit"]{
+    background-color: #009EFF;
+    cursor: pointer;
+    border: none;
+    color: white
+}
+.form-body input[type="submit"]:hover{
+    background-color: #0014FF;
+}
+
+.form-footer{
+    margin-top: 20px;
+    text-align: center;
+}
+.form-footer a{
+    color: #009EFF;
+    list-style: none;
+}
+
+.circle{
+    z-index: 1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
+    border-radius: 100%;
+    /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+.c1{
+    top: 50px;
+    left: 100px;
+    animation-name: updown1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.c2{
+    right: 50px;
+    bottom: 100px;
+    animation-name: updown2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes updown1 {
+    0%{top: 50px}
+    25%{top: 40px}
+    50%{top: 50px}
+    75%{top: 60px}
+    100%{top: 50px}
+}
+
+@keyframes updown2 {
+    0%{bottom: 100px}
+    25%{bottom: 90px}
+    50%{bottom: 100px}
+    75%{bottom: 110px}
+    100%{bottom: 100px}
+
+}
